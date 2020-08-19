@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  width: 100%;
+  height: 90vh;
+  max-height: 600px;
+  padding: 40px 2%;
+  background-image: url('../images/capa.png');
+  background-size: cover;
+  background-position: center;
+}
+
+header .logo-1 {
+  float: left;
+  width: 160px;
+  height: 60px;
+  background-image: url('../images/logo.png');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: -20px 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav li {
+  float: left;
+}
+
+header li a {
+  color: white;
+  padding: 0 20px;
+}
+
+.chamada-1 {
+  max-width: 600px;
+  float: right;
+  margin: 120px 120px;
+}
+
+.chamada-1 h2 {
+  font-weight: 300;
+  font-size: 40px;
+  color: white;
+}
+
+.chamada-1 p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
