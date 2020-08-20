@@ -14,7 +14,7 @@ a {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ header {
   background-position: center;
 }
 
-header .logo-1 {
+header .logo1 {
   float: left;
   width: 160px;
   height: 60px;
@@ -47,33 +47,172 @@ header nav {
   float: right;
 }
 
-header nav ul {
+header nav.desktop-menu ul {
   list-style: none;
 }
 
-header nav li {
+header nav.desktop-menu li {
   float: left;
 }
 
-header li a {
+header nav.desktop-menu li a {
   color: white;
   padding: 0 20px;
 }
 
-.chamada-1 {
+nav.mobile-menu {
+  display: none;
+}
+
+.chamada1 {
   max-width: 600px;
   float: right;
   margin: 120px 120px;
 }
 
-.chamada-1 h2 {
+.chamada1 h2 {
   font-weight: 300;
   font-size: 40px;
   color: white;
 }
 
-.chamada-1 p {
+.chamada1 p {
   color: white;
   font-size: 16px;
   font-weight: 300;
+}
+
+section.sessao1 {
+  width: 100%;
+  height: 400px;
+  padding: 0 2%;
+  background-color: #472562;
+}
+
+section.sessao1 .container {
+  max-width: 1000px;
+}
+
+.texto-sessao1 {
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 80px;
+  color: white;
+  margin-top: 60px;
+  padding-left: 80px;
+}
+
+.texto-sessao1 h2 {
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.texto-sessao1 p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.texto-sessao1 ul {
+  font-size: 15px;
+  list-style-position: inside;
+}
+
+.texto-sessao1 ul li {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.btn1-texto {
+  background-color: #FF703D;
+  width: 165px;
+  height: 45px;
+  font-size: 13px;
+  color: white;
+  border-radius: 40px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.device-sessao1 {
+  float: left;
+  width: 50%;
+  height: 460px;
+  position: relative;
+  top: -60px;
+  background-image: url('../images/device.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    padding: 40px 2%;
+  }
+
+  nav.desktop-menu {
+    display: none;
+  }
+
+  nav.mobile-menu {
+    display: block;
+  }
+
+  .chamada1 {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+    float: none;
+    margin: 100px 0;
+  }
+
+  .chamada1 h2 {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  .chamada1 p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  section.sessao1 {
+    padding: 40px 2%;
+    height: auto;
+    text-align: center;
+  }
+
+  .texto-sessao1 {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+    position: static;
+    float: none;
+    display: inline-block;
+  }
+
+  .texto-sessao1 ul {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .texto-sessao1 ul li {
+    float: none;
+    text-align: left;
+  }
+
+  .btn1-texto {
+    display: inline-block;
+  }
+
+  .device-sessao1 {
+    display: none;
+  }
 }
