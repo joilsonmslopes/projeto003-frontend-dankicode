@@ -25,7 +25,7 @@ a {
 header {
   width: 100%;
   height: 90vh;
-  max-height: 600px;
+  min-height: 800px;
   padding: 40px 2%;
   background-image: url('../images/capa.png');
   background-size: cover;
@@ -67,7 +67,7 @@ header nav.mobile-menu {
 .chamada1 {
   max-width: 600px;
   float: right;
-  margin: 120px 120px;
+  margin: 200px 120px;
 }
 
 .chamada1 h2 {
@@ -91,6 +91,7 @@ section.sessao1 {
 
 section.sessao1 .container {
   max-width: 1000px;
+  height: calc(100% + 60px);
 }
 
 .texto-sessao1 {
@@ -141,12 +142,38 @@ section.sessao1 .container {
 .device-sessao1 {
   float: left;
   width: 50%;
-  height: 460px;
+  height: 100%;
   position: relative;
   top: -60px;
   background-image: url('../images/device.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.sessao2 {
+  padding: 0 2%;
+  background-color: white;
+  text-align: center;
+}
+
+.sessao2 .container {
+  max-width: 1000px;
+}
+
+.sessao2 h2 {
+  color: #472663;
+  font-weight: 300;
+}
+
+.sessao2 p {
+  margin-top: 30px;
+  max-width: 900px;
+  display: inline-block;
+}
+
+.sessao2 img {
+  width: 100%;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -172,6 +199,7 @@ section.sessao1 .container {
   }
 
   header nav.mobile-menu ul {
+    display: none;
     width: 50%;
     background-color: #ffffff;
     position: absolute;
@@ -180,12 +208,11 @@ section.sessao1 .container {
     border-radius: 3px;
     list-style-type: none;
     text-align: center;
-    opacity: 0;
     transition: 0.5s;
   }
 
   header nav.mobile-menu:hover ul {
-    opacity: 1;
+    display: block;
   }
 
   header nav.mobile-menu ul li {
@@ -257,5 +284,9 @@ section.sessao1 .container {
 
   .device-sessao1 {
     display: none;
+  }
+
+  .sessao2 {
+    margin-top: 40px;
   }
 }
