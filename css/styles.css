@@ -173,7 +173,113 @@ section.sessao1 .container {
 
 .sessao2 img {
   width: 100%;
-  margin-top: 40px;
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+}
+
+.sessao3 {
+  width: 100%;
+}
+
+.sessao3 .parte1 {
+  float: left;
+  width: 50%;
+  padding: 180px 0 90px 0;  
+  background-color: #835FA7;
+  color: white;
+}
+
+.sessao3 .wrapper-parte1 {
+  max-width: 550px;
+  float: right;
+  padding: 0 30px;
+}
+
+.sessao3 .parte1 h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 23px;
+}
+
+.sessao3 .parte1 p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.sessao3 .parte2 {
+  float: left;
+  width: 50%;
+  padding: 180px 0 90px 0;  
+}
+
+.sessao3 .parte2 .sobre-autor {
+  float: left;
+  max-width: 550px;
+  padding-left: 30px;
+}
+
+.sessao3 .parte2 .sobre-autor .titulo-autor {
+  float: left;
+  width: 100%;
+}
+
+.sessao3 .parte2 .sobre-autor .titulo-autor .wrapper-titulo-autor {
+  float: left;
+}
+
+.sessao3 .parte2 .sobre-autor .titulo-autor .wrapper-titulo-autor h2 {
+  color: #232323;
+  padding-right: 20px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.sessao3 .parte2 .sobre-autor .titulo-autor .wrapper-titulo-autor p {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sessao3 .parte2 .sobre-autor .titulo-autor .img-autor {
+  float: left;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 8px;
+  border-radius: 20px;
+  background-color: gray;
+}
+
+.sessao3 .parte2 .texto-autor {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.sessao3 .parte2 .texto-autor p {
+  font-size: 16px;
+  color: #232323;
+}
+
+.sessao3 .parte2 .slider-bullets {
+  float: left;
+  width: 100%;
+  margin-top: 12px;
+  padding-left: 30px;
+}
+
+.sessao3 .parte2 .slider-bullets span {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: rgb(195, 195, 195);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -232,7 +338,6 @@ section.sessao1 .container {
 
   header nav.mobile-menu a{
     color: black;
-
   }
 
   .chamada1 {
@@ -289,4 +394,21 @@ section.sessao1 .container {
   .sessao2 {
     margin-top: 40px;
   }
+}
+
+@media screen and (max-width: 580px) {
+  .sessao2 img {
+    top: 16px;
+    margin-top: 20px;
+  }
+  .sessao3 .parte1 {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .sessao3 .parte2 {
+    width: 100%;
+    padding: 40px 0;
+  }
+
 }
