@@ -41,6 +41,7 @@ header .logo1 {
   background-position: center;
   background-repeat: no-repeat;
   margin: -20px 0;
+  cursor: pointer;
 }
 
 header nav {
@@ -58,6 +59,10 @@ header nav.desktop-menu li {
 header nav.desktop-menu li a {
   color: white;
   padding: 0 20px;
+}
+
+header nav.desktop-menu li a:hover {
+  text-decoration: underline;
 }
 
 header nav.mobile-menu {
